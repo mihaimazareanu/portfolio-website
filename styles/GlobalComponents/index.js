@@ -85,12 +85,11 @@ export const SectionDivider = styled.div`
   background: ${(props) => props.colorAlt ? 
     'linear-gradient(270deg, #F46737 0%, #945DD6 100%)' :
     'linear-gradient(270deg, #13ADC7 0%, #945DD6 100%)'};
-
-    margin: ${(props) => props.divider ? "4rem 0" : "" };
+  margin: 4rem 0;
 
   @media ${(props) => props.theme.breakpoints.md} {
-    width: 48px;
     height: 4px;
+    margin: 2rem 0;
   }
 
   @media ${(props) => props.theme.breakpoints.sm} {
