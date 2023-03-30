@@ -41,6 +41,7 @@ const handleClick = (e, i) => {
 
   return (
     <Section id="about">
+      <SectionDivider />
       <SectionTitle>About Me</SectionTitle>
       <SectionText>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa, autem cumque ducimus quod maiores ratione repellendus magni odio, recusandae, perferendis libero ipsa dolorem. Distinctio alias incidunt, ducimus qui quibusdam inventore! Voluptas amet consequatur hic atque. Nisi laudantium magni magnam vel! Atque ea dolorum qui repellendus aliquam quae, suscipit voluptatum corporis.</SectionText>
       <CarouselContainer ref={carouselRef} onScroll={handleScroll}>
@@ -94,7 +95,6 @@ const handleClick = (e, i) => {
           </CarouselButton>
         ))}
       </CarouselButtons>
-      <SectionDivider />
     </Section>
   );
 };
