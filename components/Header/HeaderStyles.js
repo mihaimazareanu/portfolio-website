@@ -19,7 +19,10 @@ export const Container = styled.div`
 `;
 
 export const Span = styled.span`
-  font-size: 2rem;
+  .${(props) => props.className} {
+    font-size: 2rem;
+  }
+
 `;
 
 export const Div1 = styled.div`
