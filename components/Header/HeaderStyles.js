@@ -18,6 +18,13 @@ export const Container = styled.div`
   }
 `;
 
+export const StyledSVG = styled.svg`
+  width: 32px;
+  height: 32px;
+  display: block;
+  margin: 0 auto;
+`;
+
 export const Span = styled.span`
   .${(props) => props.className} {
     font-size: 2rem;

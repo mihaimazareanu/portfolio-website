@@ -1,11 +1,12 @@
 export const projects = [
   {
-    title: 'MERN Memories',
-    description: "Using React, Node.js, Express & MongoDB you'll learn how to build a Full Stack MERN Application - from start to finish. The App is called Memories and it is a simple social media app that allows users to post interesting events that happened in their lives.",
-      image: '/images/1.png',
-      tags: ['Mongo', 'Express', 'React', 'Node'],
-    source: 'https://google.com',
-    visit: 'https://google.com',
+
+    title: "Mock GPT3-Clone based on a Figma design",
+    description: "This app is a stunning replica of OpenAI's GPT-3 interface, created with React.js and CSS. Discover how great design can make your app look modern and sleek, using Figma as a design tool. Elevate your app and engage your audience in new and exciting ways.",
+    image: '/images/1.png',
+    tags: ['React.js', 'CSS', 'Figma'],
+    visit: 'https://gpt3-clone-gamma.vercel.app/',
+    code: 'https://github.com/mihaimazareanu/gpt3-clone',
     id: 0,
   },
   {

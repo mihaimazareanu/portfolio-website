@@ -4,7 +4,7 @@ import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
 import { RiXingFill } from "react-icons/ri";
 import { DiCssdeck } from 'react-icons/di';
 
-import { Container, Div1, Div2, Div3, NavLink, SocialIcons, Span } from './HeaderStyles';
+import { Container, Div1, Div2, Div3, NavLink, SocialIcons, StyledSVG,Span } from './HeaderStyles';
 
 const Header = () =>  (
   <Container>
@@ -25,13 +25,13 @@ const Header = () =>  (
       </li>
     </Div2>
     <Div3>
-      <SocialIcons href='https://github.com'>
+      <SocialIcons href='https://github.com/mihaimazareanu' target="_blank">
         <AiFillGithub size="3rem"/>
       </SocialIcons>
-      <SocialIcons href='https://linkedin.com'>
+      <SocialIcons href='https://https://www.linkedin.com/in/mihai-mazareanu/' target="_blank">
         <AiFillLinkedin size="3rem"/>
       </SocialIcons>
-      <SocialIcons href='https://xing.com'>
+      <SocialIcons href='https://www.xing.com/profile/Mihai_Mazareanu/cv' target="_blank">
         <RiXingFill size="3rem"/>
       </SocialIcons>
     </Div3>
