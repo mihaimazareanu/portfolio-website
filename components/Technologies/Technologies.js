@@ -8,13 +8,13 @@ const Technologies = () =>  (
   <Section id="tech">
     <SectionDivider />
     <SectionTitle>Technologies</SectionTitle>
-    <SectionText>I have worked with a range of technologies in the web development world. From Back End to Design.</SectionText>
+    <SectionText>I have worked with a range of technologies in the web development world, from Front End to Back End and even Design.</SectionText>
     <List>
       <ListItem>
         <DiReact size="3rem" />
         <ListContainer>
           <ListTitle>Front End</ListTitle>
-          <ListParagraph>Experience with React.js</ListParagraph>
+          <ListParagraph>Experience with React.js and Next.js</ListParagraph>
         </ListContainer>
       </ListItem>
       <ListItem>

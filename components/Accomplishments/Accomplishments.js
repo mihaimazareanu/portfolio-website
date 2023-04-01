@@ -1,13 +1,10 @@
-import React from 'react';
-
 import { Section, SectionDivider, SectionTitle } from '../../styles/GlobalComponents';
 import { Box, Boxes, BoxNum, BoxText } from './AccomplishmentsStyles';
 
+import { AiFillSafetyCertificate } from "react-icons/ai";
+
 const data = [
-  { number: 20, text: 'Open Source Projects'},
-  { number: 1000, text: 'Students', },
-  { number: 1900, text: 'Github Followers', },
-  { number: 5000, text: 'Github Stars', }
+  { title: "Web Development Bootcamp", text: 'Graduated a Web Development Bootcamp offered by neue fische in Hamburg, Germany'},
 ];
 
 const Accomplishments = () => (
@@ -17,7 +14,8 @@ const Accomplishments = () => (
     <Boxes>
       {data.map((card, index) => (
         <Box key={index}>
-          <BoxNum>{card.number}+</BoxNum>
+          <AiFillSafetyCertificate size="3rem"/>
+          <BoxNum>{card.title}</BoxNum>
           <BoxText>{card.text}</BoxText>
         </Box>
       ))}
