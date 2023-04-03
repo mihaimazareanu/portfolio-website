@@ -11,7 +11,7 @@ export const projects = [
   },
   {
     title: 'Gericht Restaurant',
-    description:"While building it you're going to learn many advanced React & JavaScript topics, as well as how to use Stripe for card transactions. On top of that, at the end of the video, you will have this unique and complex webshop app that you will be able to add to your portfolio. And trust me, e-commerce applications are impressive.",
+    description:"This app is a visually appealing mock landing page for a restaurant, designed using Figma and styled with CSS. While it lacks functionality, it serves as an excellent example of the potential for creating modern, engaging web pages with React.js components. Its responsive design ensures accessibility on any device.",
     image: '/images/2.png',
     tags: ['React.js', 'CSS', 'Figma'],
     code: 'https://github.com/mihaimazareanu/gerich-restaurant',
