@@ -5,6 +5,7 @@ export default function App({ Component, pageProps }) {
   return (
     <>
       <Head>
+        <meta name='My portfolio webpage'/>
         <title>Mihai&apos;s portfolio page</title>
       </Head>
       <Theme>

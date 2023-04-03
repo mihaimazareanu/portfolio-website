@@ -23,9 +23,9 @@ export const ImageContainer = styled.div`
   }
 `
 
-export const MainImage = styled(Image)`
-  width: 100%;
-`
+// export const MainImage = styled(Image)`
+//   width: 100%;
+// `
 
 export const List = styled.ul`
   list-style-type: none;
@@ -113,21 +113,21 @@ export const ListItem = styled.li`
 }
 `
 
-export const ListIcon = styled(Image)`
-  display: block;
-  width: 48px;
-  height: 48px;
-  margin-bottom: 10px;
+// export const ListIcon = styled(Image)`
+//   display: block;
+//   width: 48px;
+//   height: 48px;
+//   margin-bottom: 10px;
   
-  @media ${props => props.theme.breakpoints.md}{
-    width: 40px;
-    height: 40px;
-    margin-bottom: 8px;
-  }
+//   @media ${props => props.theme.breakpoints.md}{
+//     width: 40px;
+//     height: 40px;
+//     margin-bottom: 8px;
+//   }
 
-  @media ${props => props.theme.breakpoints.sm}{
-    width: 32px;
-    height: 32px;
-    margin-bottom: 0px;
-  }
-`
+//   @media ${props => props.theme.breakpoints.sm}{
+//     width: 32px;
+//     height: 32px;
+//     margin-bottom: 0px;
+//   }
+// `
