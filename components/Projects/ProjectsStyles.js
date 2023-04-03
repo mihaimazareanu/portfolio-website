@@ -6,6 +6,7 @@ export const Img = styled(Image)`
   height:100%;
   object-fit: cover;
   overflow: hidden;
+  border-radius: 10px 10px 0 0;
 `
 
 export const GridContainer = styled.section`
@@ -44,7 +45,7 @@ export const HeaderThree = styled.h3`
   font-weight: 500;
   letter-spacing: 2px;
   color: #9cc9e3;
-  padding: .5rem 0;
+  padding: .5rem .5rem;
   font-size: ${(props) => props.caption ? '3rem' : '2rem'};
 `;
 

@@ -1,6 +1,7 @@
 import { BlogCard, CardInfo, ExternalLinks, GridContainer, HeaderThree, Hr, Tag, TagList, TitleContent, UtilityList, Img } from './ProjectsStyles';
 import { Section, SectionDivider, SectionTitle } from '../../styles/GlobalComponents';
 import { projects } from '../../constants/constants';
+// import Image from 'next/image';
 
 const Projects = () => {
 
@@ -10,8 +11,8 @@ const Projects = () => {
         <SectionTitle main>Projects</SectionTitle>
         <GridContainer>
           {projects.map(({ id, image, title, description, tags, code, visit }) => (
-          <BlogCard key={id}>
-            <Img src={image} alt="a photo of the landing page" />
+          <BlogCard key={id}  >
+            <Img src={image} alt="a photo of the landing page"/>
             <TitleContent>
               <HeaderThree caption>{title}</HeaderThree>
               <Hr />
