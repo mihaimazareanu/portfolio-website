@@ -23,7 +23,7 @@ export const ImageContainer = styled.div`
   }
 `
 
-export const MainImage = styled.img`
+export const MainImage = styled(Image)`
   width: 100%;
 `
 
@@ -113,7 +113,7 @@ export const ListItem = styled.li`
 }
 `
 
-export const ListIcon = styled.img`
+export const ListIcon = styled(Image)`
   display: block;
   width: 48px;
   height: 48px;

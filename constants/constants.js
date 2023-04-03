@@ -43,7 +43,7 @@ export const projects = [
     tags: ['Next.js', 'MongoDB', 'styled-components'],
     code: 'https://github.com/mihaimazareanu/capstone-project-kidsfi',
     visit: 'https://kidsfi.vercel.app/',
-    id: 3,
+    id: 4,
   },
 ];
 
