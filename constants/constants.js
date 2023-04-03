@@ -41,8 +41,8 @@ export const projects = [
     description: "M-M-Residence is a Next.js app that provides guests with details about me and my wife's home listed on HomeExchange.com. Its simple interface is user-friendly and gives guests everything they need to know to have a comfortable and enjoyable stay.",
     image: '/images/5.png',
     tags: ['Next.js', 'MongoDB', 'styled-components'],
-    code: 'https://github.com/mihaimazareanu/capstone-project-kidsfi',
-    visit: 'https://kidsfi.vercel.app/',
+    code: 'https://github.com/mihaimazareanu/m-m-residence',
+    visit: 'https://m-m-residence.vercel.app/',
     id: 4,
   },
 ];
