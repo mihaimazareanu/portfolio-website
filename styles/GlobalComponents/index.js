@@ -17,7 +17,7 @@ export const Section = styled.section`
   }
 
   @media ${(props) => props.theme.breakpoints.sm} {
-    padding: ${(props) => props.nopadding ? "0" : "16px 16px 0" } ;
+    padding: ${(props) => props.nopadding ? "0" : "1rem 1rem 0" } ;
 
     width: calc(100vw - 32px);
     flex-direction: column;
@@ -194,7 +194,6 @@ export const ButtonBack = styled.div`
   }
 
   @media ${(props) => props.theme.breakpoints.sm} {
-    width: 100%;
     height: 32px;
     font-size: 14px;
     margin-bottom: ${({ alt }) => alt ? '0' : '32px'};

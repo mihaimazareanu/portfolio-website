@@ -6,8 +6,11 @@ export const LeftSection = styled.div`
     width: 80%;
     display: flex;
     flex-direction: column;
-
     margin: 0 auto;
+
+    div:last-of-type {
+      align-self: center;
+    }
   }
   @media ${(props) => props.theme.breakpoints.md} {
     width: 100%;

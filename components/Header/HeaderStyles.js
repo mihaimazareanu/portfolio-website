@@ -6,8 +6,7 @@ export const Container = styled.div`
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: 1fr;
   grid-column-gap: 2rem;
-  padding: 1rem;
-  padding-top: 2rem;
+  padding: 2rem 1rem 1rem 1rem;
 
   @media ${(props) => props.theme.breakpoints.sm} {
     display: grid;
@@ -45,8 +44,9 @@ export const Div2 = styled.div`
   grid-area: 1 / 2 / 2 / 4;
   display: flex;
   justify-content: space-around;
+  gap: 1rem;
   @media ${(props) => props.theme.breakpoints.sm} {
-    grid-area: 2 / 2 / 3 / 5;
+    display: none;
   }
 `;
 export const Div3 = styled.div`
@@ -57,6 +57,52 @@ export const Div3 = styled.div`
   @media ${(props) => props.theme.breakpoints.sm} {
     align-items: center;
     grid-area: 1 / 4 / 2 / 6;
+  }
+`;
+
+export const BurgerMenu = styled.div`
+  /* margin-left: 1rem; */
+  display: none;
+  position: relative;
+  color: #fff;
+
+  svg {
+    transition: 0.3s ease;
+    color: white;
+    border-radius: 50px;
+    margin-right: 1rem;
+    
+    &:hover {
+      background-color: #212d45;
+      transform: scale(1.2);
+      cursor: pointer;
+  }
+  }
+
+  @media ${(props) => props.theme.breakpoints.sm} {
+    display: block;
+  }
+`;
+
+export const BurgerContainer = styled.div`
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: column;
+  text-align: end;
+  background: var(--color-footer);
+  padding: 2rem;
+  position: absolute;
+  top: 40px;
+  right: 0;
+  margin-top: 1rem;
+  min-width: 210px;
+  border-radius: 5px;
+  box-shadow: 0 0 5 rgba(0,0, 0,0.2);
+  z-index: 10;
+
+  p {
+    margin: 1rem 0;
   }
 `;
 
