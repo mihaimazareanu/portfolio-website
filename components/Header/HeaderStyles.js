@@ -61,7 +61,7 @@ export const Div3 = styled.div`
 `;
 
 export const BurgerMenu = styled.div`
-  /* margin-left: 1rem; */
+  margin-right: 1rem;
   display: none;
   position: relative;
   color: #fff;
@@ -90,7 +90,7 @@ export const BurgerContainer = styled.div`
   align-items: flex-end;
   flex-direction: column;
   text-align: end;
-  background: var(--color-footer);
+  /* background: var(--color-footer); */
   padding: 2rem;
   position: absolute;
   top: 40px;

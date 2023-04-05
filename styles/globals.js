@@ -2,6 +2,8 @@ import { createGlobalStyle } from 'styled-components';
 import { normalize } from 'styled-normalize';
 
 const GlobalStyles = createGlobalStyle`
+${normalize}
+
 @font-face {
   font-family: "Space-Grotesk";
   src: url("/fonts/SpaceGrotesk-Light.ttf") format("truetype");
@@ -36,8 +38,6 @@ const GlobalStyles = createGlobalStyle`
   font-weight: 700;
   font-style: normal;
 }
-
-  ${normalize};
 
   * {
     box-sizing: border-box;
