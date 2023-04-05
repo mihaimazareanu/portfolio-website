@@ -1,7 +1,7 @@
 export const projects = [
   {
 
-    title: "Mock GPT3-Clone based on a Figma design",
+    title: "Mock GPT3-Clone",
     description: "This app is a stunning replica of OpenAI's GPT-3 interface, created with React.js and CSS. Discover how great design can make your app look modern and sleek, using Figma as a design tool. Elevate your app and engage your audience in new and exciting ways.",
     image: '/images/1.png',
     tags: ['React.js', 'CSS', 'Figma'],
@@ -19,7 +19,7 @@ export const projects = [
     id: 1,
   },
   {
-    title: 'Business modern app',
+    title: 'Modern Business App',
     description: "This React.js app, created using the Vite framework, showcases a modern webpage design for a bank. It features responsive components and efficient build times, providing a seamless user experience. The app serves as an example of modern web design, with a focus on layout and responsiveness.",
       image: '/images/3.png',
       tags: ['React.js', 'Vite', "TailwindCSS", "Figma"],
