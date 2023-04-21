@@ -1,13 +1,17 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { DiMongodb, DiReact } from 'react-icons/di';
 import { FiFigma } from "react-icons/fi"
 import { Section, SectionDivider, SectionText, SectionTitle } from '../../styles/GlobalComponents';
 import { List, ListContainer, ListItem, ListParagraph, ListTitle } from './TechnologiesStyles';
+import { ThemeContext } from '@/contexts/ThemeContext';
 
-const Technologies = () =>  (
+const Technologies = () =>  {
+  const {isDarkTheme} = useContext(ThemeContext)
+
+  return (
   <Section id="tech">
-    <SectionDivider />
-    <SectionTitle>Technologies</SectionTitle>
+    <SectionDivider dark={isDarkTheme}/>
+    <SectionTitle dark={isDarkTheme}>Technologies</SectionTitle>
     <SectionText>I have worked with a range of technologies in the web development world, from Front End to Back End and even Design.</SectionText>
     <List>
       <ListItem>
@@ -33,6 +37,6 @@ const Technologies = () =>  (
       </ListItem>
     </List>
   </Section>
-);
+)};
 
 export default Technologies;

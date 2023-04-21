@@ -7,6 +7,7 @@ export const Container = styled.div`
   grid-template-rows: 1fr;
   grid-column-gap: 2rem;
   padding: 2rem 1rem 1rem 1rem;
+  align-items: center;
 
   @media ${(props) => props.theme.breakpoints.sm} {
     display: grid;
@@ -64,16 +65,14 @@ export const BurgerMenu = styled.div`
   margin-right: 1rem;
   display: none;
   position: relative;
-  color: #fff;
 
   svg {
     transition: 0.3s ease;
-    color: white;
     border-radius: 50px;
     margin-right: 1rem;
     
     &:hover {
-      background-color: #212d45;
+      background-color: ${props => props.dark ? "#212d45" : "hotpink" } ;
       transform: scale(1.2);
       cursor: pointer;
   }
@@ -90,7 +89,6 @@ export const BurgerContainer = styled.div`
   align-items: flex-end;
   flex-direction: column;
   text-align: end;
-  /* background: var(--color-footer); */
   padding: 2rem;
   position: absolute;
   top: 40px;
@@ -110,10 +108,10 @@ export const BurgerContainer = styled.div`
 export const NavLink = styled.a`
   font-size: 2rem;
   line-height: 32px;
-  color: rgba(255, 255, 255, 0.75);
+  color: ${props => props.theme.colors.boxText};
   transition: 0.4s ease;
   &:hover {
-    color: #fff;
+    color: ${props => props.theme.colors.linkHover};
     opacity: 1;
     cursor: pointer;
   }
@@ -122,33 +120,33 @@ export const NavLink = styled.a`
   }
 `;
 
-/// DropDown Contact
-export const ContactDropDown = styled.button`
-  border: none;
-  display: flex;
-  position: relative;
-  background: none;
-  font-size: 1.7rem;
+// DropDown Contact
+// export const ContactDropDown = styled.button`
+//   border: none;
+//   display: flex;
+//   position: relative;
+//   background: none;
+//   font-size: 1.7rem;
 
-  line-height: 32px;
-  color: rgba(255, 255, 255, 0.75);
-  cursor: pointer;
-  transition: 0.3s ease;
+//   line-height: 32px;
+//   color: rgba(255, 255, 255, 0.75);
+//   cursor: pointer;
+//   transition: 0.3s ease;
 
-  &:focus {
-    outline: none;
-  }
-  &:hover {
-    color: #fff;
-  }
+//   &:focus {
+//     outline: none;
+//   }
+//   &:hover {
+//     color: #fff; 
+//   }
 
-  @media ${(props) => props.theme.breakpoints.sm} {
-    padding: 0.4rem 0;
-  }
-  @media ${(props) => props.theme.breakpoints.md} {
-    padding: 0;
-  }
-`;
+//   @media ${(props) => props.theme.breakpoints.sm} {
+//     padding: 0.4rem 0;
+//   }
+//   @media ${(props) => props.theme.breakpoints.md} {
+//     padding: 0;
+//   }
+// `;
 
 export const NavProductsIcon = styled(IoIosArrowDropdown)`
   margin-left: 8px;
@@ -173,11 +171,11 @@ export const NavProductsIcon = styled(IoIosArrowDropdown)`
 
 export const SocialIcons = styled.a`
 transition: 0.3s ease;
-color: white;
+color: ${props => props.theme.colors.linkHover};
 border-radius: 50px;
   padding: 8px;
 &:hover {
-    background-color: #212d45;
+    background-color: ${props => props.theme.colors.backgroundHover};
     transform: scale(1.2);
     cursor: pointer;
     

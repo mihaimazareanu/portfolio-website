@@ -1,12 +1,15 @@
 // import { useState, useRef, useEffect } from 'react';
 
 // import { CarouselButton, CarouselButtonDot, CarouselButtons, CarouselContainer, CarouselItem, CarouselItemImg, CarouselItemText, CarouselItemTitle, CarouselMobileScrollNode } from './TimeLineStyles';
+import { useContext } from 'react';
 import { Section, SectionDivider, SectionText, SectionTitle } from '../../styles/GlobalComponents';
+import { ThemeContext } from '@/contexts/ThemeContext';
 // import { TimeLineData } from '../../constants/constants';
 
 // const TOTAL_CAROUSEL_COUNT = TimeLineData.length;
 
 const Timeline = () => {
+  const {isDarkTheme} = useContext(ThemeContext)
   // const [activeItem, setActiveItem] = useState(0);
   // const carouselRef = useRef();
 
@@ -41,8 +44,8 @@ const Timeline = () => {
 
   return (
     <Section id="about">
-      <SectionDivider />
-      <SectionTitle>About Me</SectionTitle>
+      <SectionDivider dark={isDarkTheme}/>
+      <SectionTitle dark={isDarkTheme}>About Me</SectionTitle>
       <SectionText>My name is Mihai and I&apos;m based in the beautiful city of Hamburg, Germany. I recently made the exciting transition from a career in transport and logistics to web development. I&apos;ve always had a passion for IT and technology, and I felt that web development would provide me with the perfect opportunity to pursue this passion while challenging myself in new ways. </SectionText>
       <SectionText> I enrolled in a 3-month Web Development Bootcamp and graduated successfully. While I may be relatively new to the industry, I am confident in my abilities as a developer. I am a quick learner and have already demonstrated a strong level of proficiency and expertise in my work. </SectionText>
       <SectionText> Despite being a newcomer, I believe that my diverse background and strong work ethic make me a valuable asset in the field of web development. I&apos;m a creative thinker who pays meticulous attention to detail, and I&apos;m always eager to take on new challenges. </SectionText>

@@ -1,14 +1,16 @@
 import { BlogCard, CardInfo, ExternalLinks, GridContainer, HeaderThree, Hr, Tag, TagList, TitleContent, UtilityList, Img } from './ProjectsStyles';
 import { Section, SectionDivider, SectionTitle } from '../../styles/GlobalComponents';
 import { projects } from '../../constants/constants';
-// import Image from 'next/image';
+import { useContext } from 'react';
+import { ThemeContext } from '@/contexts/ThemeContext';
 
 const Projects = () => {
+  const {isDarkTheme} = useContext(ThemeContext)
 
   return (
       <Section id="projects">
-        <SectionDivider />
-        <SectionTitle main>Projects</SectionTitle>
+        <SectionDivider dark={isDarkTheme}/>
+        <SectionTitle main dark={isDarkTheme}>Projects</SectionTitle>
         <GridContainer>
           {projects.map(({ id, image, title, description, tags, code, visit }) => (
           <BlogCard key={id}  >
