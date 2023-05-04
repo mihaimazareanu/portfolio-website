@@ -72,7 +72,7 @@ export const BurgerMenu = styled.div`
     margin-right: 1rem;
     
     &:hover {
-      background-color: ${props => props.dark ? "#212d45" : "hotpink" } ;
+      background-color: ${props => props.dark ? "#212d45" : "white" } ;
       transform: scale(1.2);
       cursor: pointer;
   }

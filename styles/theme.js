@@ -3,7 +3,7 @@ import { ThemeContext } from '@/contexts/ThemeContext';
 
 import {lightTheme, darkTheme} from "../themes/default";
 import GlobalStyles from './globals';
-import { useContext, useState } from 'react';
+import { useContext } from 'react';
 
 const Theme = ({ children }) => {
   const {isDarkTheme} = useContext(ThemeContext);
