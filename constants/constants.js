@@ -1,12 +1,21 @@
 export const projects = [
   {
+    title: 'sdanundverkauf.de',
+    description: "On this website any user can get up-to-date information about the current gold and silver prices and can decide if they want to sell their old gold or silver products to my client. There is also a calculator to help the user get an estimate of what they could get for their products before they actually go to the store.",
+    image: '/images/6.png',
+    tags: ['Next.js', 'PHP', 'styled-components'],
+    code: 'https://github.com/mihaimazareanu/sdanundverkauf',
+    visit: 'https://sdanundverkauf.de',
+    id: 0,
+  },
+  {
     title: 'kidsFi',
     description: "kidsFi is a Next.js app that introduces children to finance. It allows them to track their piggy bank, savings account, and interest rate. Built with MongoDB, styled-components, and Figma, it's a simple and engaging way for kids to learn about personal finance.",
     image: '/images/4.png',
     tags: ['Next.js', 'MongoDB', 'styled-components'],
     code: 'https://github.com/mihaimazareanu/capstone-project-kidsfi',
     visit: 'https://kidsfi.vercel.app/',
-    id: 0,
+    id: 1,
   },
    {
     title: 'm-m-residence',
@@ -15,7 +24,7 @@ export const projects = [
     tags: ['Next.js', 'MongoDB', 'styled-components'],
     code: 'https://github.com/mihaimazareanu/m-m-residence',
     visit: 'https://m-m-residence.vercel.app/',
-    id: 1,
+    id: 2,
   },
   {
     title: "Mock GPT3-Clone",
@@ -24,7 +33,7 @@ export const projects = [
     tags: ['React.js', 'CSS', 'Figma'],
     visit: 'https://gpt3-clone-gamma.vercel.app/',
     code: 'https://github.com/mihaimazareanu/gpt3-clone',
-    id: 2,
+    id: 3,
   },
   {
     title: 'Gericht Restaurant',
@@ -33,7 +42,7 @@ export const projects = [
     tags: ['React.js', 'CSS', 'Figma'],
     code: 'https://github.com/mihaimazareanu/gerich-restaurant',
     visit: 'https://gerich-restaurant-omega.vercel.app/',
-    id: 3,
+    id: 4,
   },
   {
     title: 'Modern Business App',
@@ -42,14 +51,6 @@ export const projects = [
       tags: ['React.js', 'Vite', "TailwindCSS", "Figma"],
     code: 'https://github.com/mihaimazareanu/business-modern-app-vite',
     visit: 'https://business-modern-app.vercel.app/',
-    id: 4,
+    id: 5,
   },  
-];
-
-export const TimeLineData = [
-  { year: 2017, text: 'Started my journey', },
-  { year: 2018, text: 'Worked as a freelance developer', },
-  { year: 2019, text: 'Founded JavaScript Mastery', },
-  { year: 2020, text: 'Shared my projects with the world', },
-  { year: 2021, text: 'Started my own platform', },
 ];
